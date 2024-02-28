@@ -34,7 +34,7 @@ const Header = () => {
   }
   const getEvents = async () => {
     try {
-      const req = await axios.get('http://localhost:5000/api/events',  {
+      const req = await axios.get('https://backend-finalproject-7ojv.onrender.com/api/events',  {
         headers: {
           authorization: `Bearer ${localStorage.getItem("token")}`
         }

@@ -31,7 +31,7 @@ const Signup = () => {
     };
 
     try {
-      const response = await axios.post('http://localhost:5000/api/users/register', obj)
+      const response = await axios.post('https://backend-finalproject-7ojv.onrender.com/api/users/register', obj)
       navigate('/login');
     } catch (error) {
       setReqError(error.message);

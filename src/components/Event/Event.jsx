@@ -20,7 +20,7 @@ const Event = () => {
     };
 
     try {
-      const response = await axios.post('http://localhost:5000/api/events', obj, {
+      const response = await axios.post('https://backend-finalproject-7ojv.onrender.com/api/events', obj, {
         headers: {
           authorization: `Bearer ${localStorage.getItem("token")}`
         }
@@ -32,7 +32,7 @@ const Event = () => {
 
     /**
 
-    fetch("http://localhost:5000/api/events", {
+    fetch("https://backend-finalproject-7ojv.onrender.com/api/events", {
       method: "post",
       body: JSON.stringify(obj),
       headers: {

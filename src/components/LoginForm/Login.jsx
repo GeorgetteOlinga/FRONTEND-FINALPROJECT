@@ -24,7 +24,7 @@ const Login = () => {
     };
 
     try {
-      const request = await axios.post('http://localhost:5000/api/users/login', obj)
+      const request = await axios.post('https://backend-finalproject-7ojv.onrender.com/api/users/login', obj)
       localStorage.setItem("token", request.data.token)
       navigate("/home");
     } catch (error) {
@@ -35,7 +35,7 @@ const Login = () => {
 
    
 /**
-    fetch("http://localhost:5000/api/users/login", {
+    https://backend-finalproject-7ojv.onrender.com/api/users/login", {
       method: "post",
       body: JSON.stringify(obj),
       headers: {
